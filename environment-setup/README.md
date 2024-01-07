@@ -21,7 +21,8 @@ Check that you can start the VM, log in and have Ubuntu desktop running with int
 ### Step 2: Fork lab repository
 
 Log into TUAS gilab https://git.dc.turkuamk.fi/ and in main menu, switch to Groups / Python-OO. (If Python-OO is not shown, ask instructor to add you to that group). In that group there is repository `object-oriented-programming-with-python`. Create a private <b>fork</b> to your personal namespace. A fork is a copy of a project. Forking a repository allows you to make changes without affecting the original project. This forked project works as your return repository.  
-Please add user `jppaalas` to the project with "Developer" role.
+- add user `jppaalas` to the project with "Developer" role.
+- add tag 'python-oo-2024K' to your repository: In gitlab Settings->General, "Topics"
 
 ### Step 3: Customize VM
 

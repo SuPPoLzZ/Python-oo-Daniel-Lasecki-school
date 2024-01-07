@@ -10,7 +10,7 @@ For Python OO course works you need to have
 
 ### Step 1: Install VM
 
-Download VM image from 
+Download VM image from (link valid until 28.1.) https://filesender.funet.fi/?s=download&token=412b3f3e-f1d0-48c3-aefc-bab44132b185  alternatively from emblab ftp ftp://172.27.0.240 navigate to python-oo.
 Import VM to VirtualBox.
 Modify configuration:
 - The default "NAT" network is recommended.

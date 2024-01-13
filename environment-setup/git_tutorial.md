@@ -27,6 +27,18 @@ A version history in <b>local repository</b> consists of sequence of <b>commits<
 - <b>Feature branches</b> are used for adding major features. Developer creates a new branch from current head, adds all commits into that bracnh until code is final and tested. Then feature branch is merged into main, and that feature branch is deleted. Feature branches scale well: it is possible for multiple developers to work on same project, with each developer team on a separate parallel feature branch.
 - <b>Release branches</b> are used for controlling the release of features to customers. For example the "development" branch is the work-in-progress where feature branches are started and merged. "Release" branch is merged from stable development points. In large teams it might be necessary to have a separate "testing" branch between those two.
 - You should start a new temporary branch when you start tinkering with the code with multiple commits: if you do not know how to proceed, so you might need to edit/delete earlier working code to see is there another way of getting the new feature done. You know that main branch still has the other development idea in working state.
+```mermaid
+
+gitGraph
+   commit id: "Initial Commit"
+   branch new-feature
+   checkout new-feature
+   commit id: "Feature Commit 1"
+   commit id: "Feature Commit 2"
+   checkout main
+   commit id: "Hotfix Commit on Main"
+   merge new-feature
+```
 
 > I can see all workspace files, but where is the local repository located? All commits are stored inside .git directory in either current folder or any parent folder (where you created or cloned the repo into) that contains .git folder. If none is found, you get error message `fatal: not a git repository`
 

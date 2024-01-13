@@ -2,6 +2,8 @@
 
 ## Git overview
 
+### 1. Git within one Workstation
+
 In the simplest setup on an isolated workstation git provides source code version control. 
 
 ```mermaid
@@ -42,8 +44,9 @@ gitGraph
 
 > I can see all workspace files, but where is the local repository located? All commits are stored inside .git directory in either current folder or any parent folder (where you created or cloned the repo into) that contains .git folder. If none is found, you get error message `fatal: not a git repository`
 
-In a more complex setup there are more than one repository.
-git is a <b>distributed version control</b> system, meaning that all connected repositories contain full version history and there is no named central repository. In lab setup  you have two identical repositories, one local repository in your development VM and other remote repository at TUAS gitlab service. Both repositories contain full version history (when properly synced), so the setup acts as backup as well.
+### 2. Git project setup with GitLab
+
+In a more complex setup there are more than one repository. Git is a <b>distributed version control</b> system, meaning that all connected repositories contain full version history and there is no named central repository. In <b>your project setup</b> you will have two identical repositories, one local repository in your development VM and other remote repository at TUAS gitlab service. Both repositories contain full version history (when properly synced), so the setup acts as backup as well.
 The repositories are synced using `push` and `pull` operations.
 
 ```mermaid
@@ -64,7 +67,30 @@ graph TB
     style SW fill:#ccf,stroke:#333,stroke-width:2px
 ```
 
+### 3. Course setup
 
+In the complete <b>course lab setup</b> you first fork your project from given upstream repository, and make one-way updates (when teacher-made updates are announced) with `fetch` and `merge` operations as diagrammed below:
+```mermaid
+graph TB
+    subgraph SW["Student Workstation"]
+        LR["Local Repo"]
+        WS["Workspace"]
+        WS -->|Commit| LR
+        LR -->|Checkout| WS
+    end
+    subgraph SG["TUAS GitLab Server"]
+        UR["Upstream Repo"]
+        RR["Remote Repo"]
+    end
+    UR -.->|Forked to| RR
+    RR -.->|Cloned to| LR
+    UR -->|Fetch| LR
+    RR -->|Pull| LR
+    LR -->|Push| RR
+    LR -->|Merge| LR
+    style SG fill:#f9f,stroke:#333,stroke-width:4px
+    style SW fill:#ccf,stroke:#333,stroke-width:2px
+```
 
 
 ## Lab assignment 1

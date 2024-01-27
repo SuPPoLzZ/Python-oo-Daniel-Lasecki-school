@@ -12,5 +12,7 @@ class Custormer:
         
 class Cable:
     def __init__(self, attribute_model: str, attribute_length: str, attribute_max_speed: float, attribute_bidirectional: bool):
-        s
-    
+        self.attribute_model = attribute_model
+        self.attribute_length = attribute_length
+        self.attribute_max_speed = attribute_max_speed
+        self.attribute_bidirectional = attribute_bidirectional

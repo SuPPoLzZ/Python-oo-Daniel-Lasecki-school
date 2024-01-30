@@ -39,7 +39,9 @@ To run your tests, simply execute the pytest command in your terminal:
 ```bash
 pytest
 ```
-Pytest will automatically discover and run any files named test_*.py or *_test.py.
+Pytest will automatically discover and run any files named test_*.py or *_test.py.  
+
+You can run the tests directly from vscode too, see  (https://code.visualstudio.com/docs/python/testing)
 
 ### Multiple file approach
 In this folder you have the original ShoppingList class in one file `shopping.py`. This file contains class definitions only, no runnable code.   

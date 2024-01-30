@@ -43,7 +43,9 @@ Pytest will automatically discover and run any files named test_*.py or *_test.p
 
 ### Multiple file approach
 In this folder you have the original ShoppingList class in one file `shopping.py`. This file contains class definitions only, no runnable code.   
-Another file `test_shopping.py` contains the test cases for the class. In each test case, the code creates one object from the class, calls some methods to set the object in known state and tests one thing only (test case). In designing the the test cases, you should consider creating
+Another file `test_shopping.py` contains the test cases for the class. In each test case, the code creates one object from the class, calls some methods to set the object in known state and tests one thing only (test case). You can run all test cases by just typing `pytest` in project terminal line.  
+
+In designing the the test cases, you should consider creating
 - a separate test case for each feature (method) in the class
 - separate test case for all valid input combinations for constructor and methods
 - separate test cases for invalid inputs (check for raised exceptions)

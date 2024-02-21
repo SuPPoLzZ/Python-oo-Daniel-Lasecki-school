@@ -13,7 +13,8 @@ class LunchCard:
     def __str__(self):
         if self.balance < 0 or self.balance ==  0:
                 return f"inssuficient balance try again later"
-        return f"The balance is {self.balance}"
+        finalbalance = round(self.balance, 2)
+        return f"The balance is {finalbalance} Euro"
     
     
     

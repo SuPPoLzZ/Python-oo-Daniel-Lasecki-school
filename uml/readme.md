@@ -23,7 +23,7 @@ classDiagram
 ```
 
 
-# UML Class Diagrams
+## UML Class Diagrams: Classes
 
 ```mermaid
 classDiagram
@@ -43,6 +43,8 @@ Public attributes and methods (+), indicating they are accessible from any part 
 Private attributes and methods (-), indicating they are accessible only within the class itself.  
 Protected attributes and methods (#), indicating they are accessible within the class and by derived classes.  
 
+## UML Class Diagrams: Class relationships
+
 ```mermaid
 classDiagram
     Class01 "1" -- "Many" Class02
@@ -54,7 +56,7 @@ classDiagram
 
 in the diagrams above 
 
--- denotes an association, indicating a link between two classes (e.g., Class01 contains a link to Class02). 
+-- denotes an association, indicating a link between two classes (e.g., Class01 contains a reference to Class02 or vice versa, or both). 
 
 --|> signifies inheritance, showing that one class is a subclass of another (e.g., Class05 inherits from Class06). NOTE that the arrow direction is towards generalization i.e. to parent class.    
 

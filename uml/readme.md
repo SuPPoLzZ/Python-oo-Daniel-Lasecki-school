@@ -39,9 +39,9 @@ classDiagram
 
 The diagram above defines a class MyClass with:
 
-Public attributes and methods (+), indicating they are accessible from any part of the code.
-Private attributes and methods (-), indicating they are accessible only within the class itself.
-Protected attributes and methods (#), indicating they are accessible within the class and by derived classes.
+Public attributes and methods (+), indicating they are accessible from any part of the code.  
+Private attributes and methods (-), indicating they are accessible only within the class itself.  
+Protected attributes and methods (#), indicating they are accessible within the class and by derived classes.  
 
 ```mermaid
 classDiagram
@@ -62,7 +62,7 @@ in the diagrams above
 
 *-- represents composition, a strong form of association with a strong lifecycle dependency (e.g., Class09 creates a list (or any collection) of many instances of Class10, and all instances are deleted when container class09 is deleted).  
 
-o-- denotes aggregation, a form of association that represents a "has-a" relationship with a weaker lifecycle dependency (e.g., Class11 has a collection of many instances of Class12, but those instances con tinue to exist even after container class11 is deleted).  
+o-- denotes aggregation, a form of association that represents a "has-a" relationship with a weaker lifecycle dependency (e.g., Class11 has a collection of many instances of Class12, but those instances continue to exist even after container class11 is deleted).  
 
 
 ## Example 

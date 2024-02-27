@@ -39,9 +39,9 @@ classDiagram
 
 The diagram above defines a class MyClass with:
 
-Public attributes and methods (+), indicating they are accessible from any part of the code.  
-Private attributes and methods (-), indicating they are accessible only within the class itself.  
-Protected attributes and methods (#), indicating they are accessible within the class and by derived classes.  
+**Public** attributes and methods (+), indicating they are accessible from any part of the code.  
+**Private** attributes and methods (-), indicating they are accessible only within the class itself.  
+**Protected** attributes and methods (#), indicating they are accessible within the class and by derived classes.  
 
 Note that in practise, a diagram does not always show all possible attributes or methods. it is possible to show only those relevant to current diagram purposes. 
 
@@ -58,18 +58,20 @@ classDiagram
 
 in the diagrams above 
 
--- denotes an association, indicating a link between two classes (e.g., Class01 contains a reference to Class02 or vice versa, or both). 
+-- **Line** denotes an **association**, indicating a link between two classes (e.g., Class01 contains a reference to Class02 or vice versa, or both). 
 
---|> signifies inheritance, showing that one class is a subclass of another (e.g., Class05 inherits from Class06). NOTE that the arrow direction is towards generalization i.e. to parent class.    
+--|> **Open ended arrow** signifies **inheritance**, showing that one class is a subclass of another (e.g., Class05 inherits from Class06). NOTE that the arrow direction is towards generalization i.e. to parent class.    
 
-<|.. indicates realization, typically used when a class implements an interface or abstract class (e.g., Class08 realizes Class07).  
+<|.. **Open ended dotted line arrow** indicates **realization**, typically used when a class implements an interface or abstract class (e.g., Class08 realizes Class07).  
 
-*-- represents composition, a strong form of association with a strong lifecycle dependency (e.g., Class09 creates a list (or any collection) of many instances of Class10, and all instances are deleted when container class09 is deleted).  
+*-- **Filled rectangle** ended line represents **composition**, a strong form of association with a strong lifecycle dependency (e.g., Class09 creates a list (or any collection) of many instances of Class10, and all instances are deleted when container class09 is deleted).  
 
-o-- denotes aggregation, a form of association that represents a "has-a" relationship with a weaker lifecycle dependency (e.g., Class11 has a collection of many instances of Class12, but those instances continue to exist even after container class11 is deleted).  
+o-- **Open rectangle** ended line denotes **aggregation**, a form of association that represents a "has-a" relationship with a weaker lifecycle dependency (e.g., Class11 has a collection of many instances of Class12, and those instances continue to exist even after container class11 is deleted).  
 
 
 ## Example 
+
+Employee class is inherited from Person class (inherited attributes and methods are never shown). A Department can contain multiple Employees. Aggregate association between Employees and Department indicates that employment does not necessarily end in case the department is closed.
 
 ```mermaid
 classDiagram
@@ -87,5 +89,5 @@ classDiagram
       +String departmentName
     }
     Person <|-- Employee
-    Department *-- Employee
+    Department o-- Employee
 ```

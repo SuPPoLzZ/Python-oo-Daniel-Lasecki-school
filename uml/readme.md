@@ -43,6 +43,8 @@ Public attributes and methods (+), indicating they are accessible from any part 
 Private attributes and methods (-), indicating they are accessible only within the class itself.  
 Protected attributes and methods (#), indicating they are accessible within the class and by derived classes.  
 
+Note that in practise, a diagram does not always show all possible attributes or methods. it is possible to show only those relevant to current diagram purposes. 
+
 ## UML Class Diagrams: Class relationships
 
 ```mermaid

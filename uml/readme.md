@@ -46,7 +46,6 @@ Protected attributes and methods (#), indicating they are accessible within the 
 ```mermaid
 classDiagram
     Class01 "1" -- "Many" Class02
-    Class03 ..> Class04
     Class05 --|> Class06
     Class07 <|.. Class08
     Class09 "1" *-- "Many" Class10
@@ -55,12 +54,15 @@ classDiagram
 
 in the diagrams above 
 
--- denotes an association, indicating a link between two classes (e.g., Class01 contains many instances of Class02).  
-..> represents a dependency, where one class uses or depends upon another (e.g., Class03 depends on Class04).  
---|> signifies inheritance, showing that one class is a subclass of another (e.g., Class05 inherits from Class06).  
+-- denotes an association, indicating a link between two classes (e.g., Class01 contains a link to Class02). 
+
+--|> signifies inheritance, showing that one class is a subclass of another (e.g., Class05 inherits from Class06). NOTE that the arrow direction is towards generalization i.e. to parent class.    
+
 <|.. indicates realization, typically used when a class implements an interface or abstract class (e.g., Class08 realizes Class07).  
-*-- represents composition, a strong form of association with a strong lifecycle dependency (e.g., Class09 is composed of many instances of Class10).  
-o-- denotes aggregation, a form of association that represents a "has-a" relationship with a weaker lifecycle dependency (e.g., Class11 is aggregated with many instances of Class12).  
+
+*-- represents composition, a strong form of association with a strong lifecycle dependency (e.g., Class09 creates a list (or any collection) of many instances of Class10, and all instances are deleted when container class09 is deleted).  
+
+o-- denotes aggregation, a form of association that represents a "has-a" relationship with a weaker lifecycle dependency (e.g., Class11 has a collection of many instances of Class12, but those instances con tinue to exist even after container class11 is deleted).  
 
 
 ## Example 

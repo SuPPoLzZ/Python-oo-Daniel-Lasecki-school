@@ -45,6 +45,12 @@ The diagram above defines a class MyClass with:
 **Private** attributes and methods (-), indicating they are accessible only within the class itself.  
 **Protected** attributes and methods (#), indicating they are accessible within the class and by derived classes.  
 
+There are two common syntaxes for showing the types of attributes, both are acceptable (use only one syntax, don't mix):  
+```
++int age
++age : int
+```
+
 Note that in practise, a diagram does not always show all possible attributes or methods. it is possible to show only those relevant to current diagram purposes. 
 
 ## UML Class Diagrams: Class relationships

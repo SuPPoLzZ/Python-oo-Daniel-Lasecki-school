@@ -2,6 +2,8 @@
 
 Unified Modeling Language (UML) is a standardized modeling language that provides a way to visualize a system's architectural blueprints, including its elements, relationships, and dynamics. It encompasses a set of graphical notation techniques to create abstract models of software-intensive systems. UML is versatile, supporting various types of diagrams to cover conceptual, structural, and behavioral aspects, such as class diagrams for structure, sequence diagrams for behavior, and use case diagrams for interactions. It facilitates communication among stakeholders (developers, analysts, architects, and clients) by providing a common language that aids in the design and understanding of software projects. UML is widely used in software engineering for planning, analyzing, and documenting software systems, making it an essential tool for both large-scale and small-scale software development.
 
+UML has multiple diagram types. Maybe the most common diagram type is **class diagram** that models class properties and relations to other classes. **Sequence diagram** models the interaction sequences between multiple objects. 
+
 # UML and mermaid
 
 Mermaid is textual description of diagrams that can be rendered by gitlab natively. In your markdown documentation you can add mermaid diagrams in the middle of text within mermaid blocks (see source of this document!)
@@ -58,7 +60,26 @@ classDiagram
 
 in the diagrams above 
 
--- **Line** denotes an **association**, indicating a link between two classes (e.g., Class01 contains a reference to Class02 or vice versa, or both). 
+-- **Line** denotes an **association**, indicating a link between two classes (e.g., Class01 contains a reference to Class02 or vice versa, or both). Association can have direction using basic arrowhead (--> or both directions  <-->) to indicate which class has the link to other class. Example from exercise 9.2.1 Pets
+
+```mermaid
+classDiagram
+    class Pet {
+        -name: str
+        -species: str
+        +__init__(name: str, species: str)
+        +__str__() str
+    }
+    
+    class Person {
+        -name: str
+        -pet: Pet
+        +__init__(name: str, pet: Pet)
+        +__str__() str
+    }
+
+    Person --> Pet:
+```
 
 --|> **Open ended arrow** signifies **inheritance**, showing that one class is a subclass of another (e.g., Class05 inherits from Class06). NOTE that the arrow direction is towards generalization i.e. to parent class.    
 

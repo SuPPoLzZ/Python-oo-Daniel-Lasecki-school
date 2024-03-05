@@ -133,4 +133,4 @@ classDiagram
 
 ## To do
 
-Create "diagram.md" documents for all exercises in part 10. For each exercise, design class diagram showing the class, their key properties and relatioships.
+Create "diagram.md" documents for all exercises in part 10 (one file in each exercise folder). For each exercise, design class diagram showing the class, their key properties and relatioships.

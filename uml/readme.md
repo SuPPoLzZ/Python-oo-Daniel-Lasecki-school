@@ -77,7 +77,7 @@ classDiagram
 
 in the diagrams above 
 
--- **Line** denotes an **association**, indicating a link between two classes (e.g., Class01 contains a reference to Class02 or vice versa, or both). This basic association is the most common link between classes. Association can have direction using basic arrowhead (--> or both directions  <-->) to indicate which class has the link to other class. Example from exercise 9.2.1 Pets
+-- **Line** denotes an **association**, indicating a link between two classes (e.g., Class01 contains a reference to Class02 or vice versa, or both). This basic association is the most common link between classes. Association can have direction using basic arrowhead (--> or both directions  <-->) to indicate which class has the link to other class. Example from exercise 9.2.1 Pets **note** that although this example shows methods `__init__` and `__str__` it not common to show all existing methods; usually you show only the methods that are relevant for the diagram purposes. See part "Perspectives of class diagram" in tutorial linked above!
 
 ```mermaid
 classDiagram

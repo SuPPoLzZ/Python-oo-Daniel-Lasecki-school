@@ -55,6 +55,15 @@ Note that in practise, a diagram does not always show all possible attributes or
 
 ## UML Class Diagrams: Class relationships
 
+```
+classDiagram
+    Class01 "1" -- "Many" Class02
+    Class05 --|> Class06
+    Class07 <|.. Class08
+    Class09 "1" *-- "Many" Class10
+    Class11 "1" o-- "Many" Class12
+```
+
 ```mermaid
 classDiagram
     Class01 "1" -- "Many" Class02

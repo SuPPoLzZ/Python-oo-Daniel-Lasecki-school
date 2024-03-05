@@ -78,7 +78,7 @@ classDiagram
         +__str__() str
     }
 
-    Person --> Pet:
+    Person --> Pet
 ```
 
 --|> **Open ended arrow** signifies **inheritance**, showing that one class is a subclass of another (e.g., Class05 inherits from Class06). NOTE that the arrow direction is towards generalization i.e. to parent class.    

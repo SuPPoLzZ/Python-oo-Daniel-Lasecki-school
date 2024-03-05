@@ -27,6 +27,8 @@ classDiagram
 
 ## UML Class Diagrams: Classes
 
+More on class diagrams in https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/ for example
+
 ```mermaid
 classDiagram
     class MyClass {
@@ -53,7 +55,7 @@ There are two common syntaxes for showing the types of attributes, both are acce
 
 Note that in practise, a diagram does not always show all possible attributes or methods. it is possible to show only those relevant to current diagram purposes. 
 
-## UML Class Diagrams: Class relationships
+## UML Class Diagrams: Common class relationships
 
 ```
 classDiagram
@@ -75,7 +77,7 @@ classDiagram
 
 in the diagrams above 
 
--- **Line** denotes an **association**, indicating a link between two classes (e.g., Class01 contains a reference to Class02 or vice versa, or both). Association can have direction using basic arrowhead (--> or both directions  <-->) to indicate which class has the link to other class. Example from exercise 9.2.1 Pets
+-- **Line** denotes an **association**, indicating a link between two classes (e.g., Class01 contains a reference to Class02 or vice versa, or both). This basic association is the most common link between classes. Association can have direction using basic arrowhead (--> or both directions  <-->) to indicate which class has the link to other class. Example from exercise 9.2.1 Pets
 
 ```mermaid
 classDiagram
@@ -127,3 +129,8 @@ classDiagram
     Person <|-- Employee
     Department o-- Employee
 ```
+
+
+## To do
+
+Create "diagram.md" documents for all exercises in part 10. For each exercise, design class diagram showing the class, their key properties and relatioships.

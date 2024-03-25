@@ -209,4 +209,7 @@ https://www.youtube.com/watch?v=s_4ZrtQs8Do
 ## To do
 
 Apply factory pattern to the code in this folder (make a copy of python file to keep both versions).
+1. Refactor the Code: Your task is to refactor the NotificationManager class to use the Factory Pattern for creating notification sender objects. This involves creating a separate factory class that encapsulates the logic of instantiating notification sender objects. 
+2. Extend the Notification System: After refactoring, add a new notification type (e.g., SlackNotification) to demonstrate how the Factory Pattern makes it easier to extend the system with new types of notifications without modifying the existing factory logic.
+3. Encapsulate Object Creation: Ensure that the client code (NotificationManager in this case) does not directly instantiate the notification sender objects. It should only interact with the factory class/interface to get these objects.
 

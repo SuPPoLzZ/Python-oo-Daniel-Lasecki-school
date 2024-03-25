@@ -188,6 +188,10 @@ classDiagram
 6. Promotes Reusability: The Observer Pattern promotes reusability through the separation of concerns. The same observer can be used across different subjects, or the same subject can notify different types of observers, making components more reusable.
 7. Scalability in the Event Handling System: It's easier to scale the event handling system as new types of events or observers are introduced. The pattern can accommodate growth in complexity without significant increases in system coupling or the need for extensive rewrites.
 
+## Another example
+
+https://www.youtube.com/watch?v=oNalXg67XEE
+
 ## To Do 
 
 Apply observer pattern to the code in this folder (create a copy of the file before editing so that you have both versions). The code has Subject class with an internal state, and if the state changes the consumers need to be notifies. In current version the state is nicely encapsulated, but it contains a static list of local consumers. Apply observer pattern, and move the local consumer functions into a separate class each. 

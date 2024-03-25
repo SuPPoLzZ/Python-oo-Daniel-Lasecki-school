@@ -136,7 +136,7 @@ if __name__ == "__main__":
         print(e)
 ```
 
-The factory solution can be shown as UML class diagram as below. Note that our Python implementation is slightly different, since Python allows dynamic typing, so we can rely on all database classes to have the same mandatory methods and it just works. In other oo languages, we need to have an inherited (abstract) base class or a defined interface that has been implemented by database connection classes. Python does have an abstract class type that could be used to enforce the child class interfaces, but that is not used in example code.
+The factory solution can be shown as UML class diagram as below. You see that client has less coupling.
 
 ```mermaid
 classDiagram
